@@ -1,6 +1,6 @@
 import { OTP } from './components/Otp';
 import './index.scss';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import checkMailIcon from '../../../../assets/icons/check mail icon.svg';
 import Button from '../../../../components/ui/Button';
 export default function CheckMail({ onSecondStepClick }) {

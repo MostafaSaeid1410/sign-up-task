@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './index.scss';
 import Input from '../../../../components/ui/Input';
 import egFlag from '../../../../assets/icons/ic_language_ar.svg';

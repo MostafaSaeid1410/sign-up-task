@@ -1,5 +1,4 @@
 import './index.scss';
-import React from 'react';
 
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable prefer-destructuring */
@@ -11,7 +10,6 @@ import {
   forwardRef,
   useImperativeHandle,
 } from 'react';
-import SingleInput from './SingleInput';
 import SingleOTPInput from './SingleInput';
 
 // eslint-disable-next-line react/display-name
