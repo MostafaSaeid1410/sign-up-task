@@ -1,0 +1,131 @@
+@import '../../assets/scss/variables';
+
+.container {
+  min-width: 144rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 80% 10%;
+}
+
+.header {
+  background-color: purple;
+  padding: 1.8rem 3.2rem;
+  display: flex;
+  align-items: center;
+  &-logo {
+    display: flex;
+    align-items: center;
+    img {
+      line-height: 1;
+    }
+  }
+}
+
+.header-img {
+  grid-row: span 3;
+
+  background-color: green;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__haveAccount {
+    margin-bottom: 0.8rem;
+    &-para {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+    }
+  }
+  &__localisation-btn {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.92rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .RegisterationForm__container {
+    margin-bottom: 3.2rem;
+  }
+}
+
+.footer {
+  padding: 4.4rem 3.2rem 3.2rem 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  &__copyrights {
+    color: $color-grey-600;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: $color-grey-600;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+}
+
+.progressbar {
+  width: 69.6rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &::before {
+    content: '';
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: $color-grey-200;
+  }
+  &__progress-step {
+    z-index: 9;
+    position: relative;
+    display: flex;
+
+    &--active {
+      background-color: $color-grey-100;
+      padding: 6px;
+      border-radius: 999px;
+    }
+    &--activeable-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      width: 24px;
+      border-radius: 9999px;
+      background-color: $color-grey-100;
+      &__white-circle {
+        height: 8px;
+        width: 8px;
+        border-radius: 999px;
+        background-color: #fff;
+      }
+    }
+    &--activeable-circle--active {
+      background-color: $color-brand-900;
+    }
+  }
+}
+
+.form-steps {
+  margin-bottom: 9.1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 69.6rem;
+}

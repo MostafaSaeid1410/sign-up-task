@@ -1,0 +1,29 @@
+@import '../../../../../../assets/scss/variables';
+
+.phone-input {
+  &__wrapper {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 20px;
+    color: $color-grey-700;
+  }
+  &__componentWrapper {
+    .form-control {
+      width: 100%;
+      height: auto;
+      padding: 1rem 1.4rem 1rem 5rem;
+      border-radius: $border-radius-md;
+      box-shadow: $shadow-sm;
+      overflow: hidden;
+    }
+    .flag-dropdown {
+      border-right: none;
+      background-color: #fff;
+      border-radius: $border-radius-md;
+      padding: 1rem 0rem 1rem 1.4rem;
+      .selected-flag {
+        padding: 0;
+      }
+    }
+  }
+}
