@@ -2,6 +2,7 @@
 
 .input-container {
   text-align: left;
+  position: relative;
 }
 
 .input {
@@ -13,9 +14,13 @@
   border: 1px solid $color-grey-300;
   box-shadow: $shadow-sm;
   padding: $padding-input;
+  background-color: $color-grey-150;
   width: 100%;
   &--prefix {
     padding: 10px 14px 10px 6.4rem;
+  }
+  &--suffix {
+    padding: 1rem 6.4rem 1rem 1.4rem;
   }
 }
 ::placeholder {
@@ -31,8 +36,24 @@
   margin-bottom: 0.6rem;
   color: $color-grey-700;
   font-weight: 500;
-  // text-align: left;
 }
 .input-prefix {
   position: absolute;
+}
+.input-suffix {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-29%);
+  background-color: #fff;
+  border: 1px solid $color-grey-300;
+  height: 4.5rem;
+  box-shadow: $shadow-sm;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 16px 10px 16px;
+  width: 32.5%;
 }

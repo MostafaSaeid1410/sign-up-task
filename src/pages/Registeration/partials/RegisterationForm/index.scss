@@ -24,3 +24,35 @@
 .password-input__container {
   margin-bottom: 0.4rem;
 }
+
+.RegisterationForm__container {
+  margin-bottom: 3.2rem;
+  &__haveAccount {
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    &-para {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+    }
+  }
+  &__localisation-btn {
+    display: block;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.92rem;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-registeration {
+  margin-bottom: 3.2rem;
+}

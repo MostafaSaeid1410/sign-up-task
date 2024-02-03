@@ -35,7 +35,6 @@ export default function PhoneInputCountryCode() {
             required: true,
           }}
           disableDropdown={false}
-          // jumpCursorToEnd={true}s
           className="phone-input__componentWrapper"
         />
       </label>

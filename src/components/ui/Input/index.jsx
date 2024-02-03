@@ -2,6 +2,7 @@ import './index.scss';
 
 export default function Input({
   prefix,
+  suffix,
   label,
   placeholder,
   className,
@@ -13,13 +14,16 @@ export default function Input({
         <label htmlFor={label} className="label">
           {label}
         </label>
-        <div className="input-prefix">{prefix}</div>
+        {prefix && <div className="input-prefix">{prefix}</div>}
         <input
           id={label}
-          className={`input input${prefix ? '--prefix' : ''} ${className}`}
+          className={`input input${prefix ? '--prefix' : ''} input${
+            suffix ? '--suffix' : ''
+          } ${className}`}
           {...rest}
           placeholder={placeholder}
         ></input>
+        {suffix && <div className="input-suffix">{suffix}</div>}
       </div>
     </>
   );
